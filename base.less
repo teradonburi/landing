@@ -12,6 +12,7 @@ h2 {
   text-align: center;
 }
 
+
 h3 {
   margin: 0px;
 }
@@ -47,45 +48,6 @@ a:link, a:visited {
   text-decoration: none; 
 }
 
-ul.menu {
-  margin: 0;
-  padding: 0; 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  font-size: 16px;
-  width: 500px;
-  height: 64px;
-}
-
-ul.menu-mobile {
-  margin: 0;
-  padding: 0; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  font-size: 10px;
-  width: 100%;
-}
-
-ul.menu-mobile li {
-  width: 100%;
-  text-align: center;
-  border: solid 1px white;
-  background: grey;
-  :active {
-    background: darkgray;
-  }
-}
-
-ul.menu-mobile a {
-  padding-top: 16px; 
-  padding-bottom: 16px; 
-  height: 100%;
-  display: block;
-}
 
 .concept {
   display: flex; 
@@ -99,11 +61,23 @@ ul.menu-mobile a {
   height: 300px;
 }
 
+.service-icon-red {
+  filter: opacity(.5) drop-shadow(0 0 0 red) brightness(200%);
+  .service-icon;
+}
+
+.service-icon-green {
+  filter: opacity(.5) drop-shadow(0 0 0 green) brightness(200%);
+  .service-icon;
+}
+
+.service-icon-blue {
+  filter: opacity(.5) drop-shadow(0 0 0 blue) brightness(200%);
+  .service-icon;
+}
 
 .service-icon {
   margin: 30px; 
-  width: 128px; 
-  height: 128px;
 }
 
 
@@ -151,6 +125,10 @@ ul.menu-mobile a {
   border-radius: 50%;
 }
 
+.company-item {
+  margin-bottom: 10px;
+}
+
 .footer {
   background: grey; 
   display: flex; 
@@ -161,17 +139,18 @@ ul.menu-mobile a {
 
 .footer-items {
   display: flex; 
+  justify-content: center;
+  width: 100%;
   margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .function-img {
   margin-left: 30px; 
   margin-right: 30px; 
-  width: 256px; 
-  height: 256px;
 }
 
-.footer-items * {
+.sns-icon {
   margin-left: 12px;
   margin-right: 12px;
 }
@@ -180,6 +159,43 @@ h1 {
   font-size: 24px;
   text-align: center;
   width: 70%;
+}
+
+ul.menu {
+  margin: 0;
+  padding: 0; 
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-size: 16px;
+  width: 500px;
+  height: 64px;
+}
+ul.menu-mobile {
+  margin: 0;
+  padding: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 10px;
+  width: 100%;
+}
+ul.menu-mobile li {
+  width: 100%;
+  text-align: center;
+  border: solid 1px white;
+  background: grey;
+  :active {
+    background: darkgray;
+  }
+}
+ul.menu-mobile a {
+  padding-top: 16px; 
+  padding-bottom: 16px; 
+  height: 100%;
+  display: block;
 }
 .examples {
   display: flex; 
@@ -218,16 +234,16 @@ div#service, div#function {
 div#example, div#price {
   padding-bottom: 20px;
 }
-.show-pc {
-  display: none !important;
-}
-.show-mobile {
-  display: inherit !important;
-}
 @media screen and (min-width:480px) { 
   h1 {
     font-size: 36px;
     width: 100%;
+  }
+  ul.menu {
+    display: flex;
+  }
+  ul.menu-mobile {
+    display: none;    
   }
   .examples {
     display: flex; 
@@ -262,11 +278,5 @@ div#example, div#price {
   }
   .reverse {
     flex-direction: row-reverse;
-  }
-  .show-pc {
-    display: inherit !important;
-  }
-  .show-mobile {
-    display: none !important;
   }
 }
