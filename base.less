@@ -107,10 +107,6 @@ a:link, a:visited {
   border-radius: 50%;
 }
 
-.company-item {
-  margin-bottom: 10px;
-}
-
 .footer {
   background: grey; 
   display: flex; 
@@ -179,17 +175,16 @@ ul.menu-mobile a {
   height: 100%;
   display: block;
 }
+.service-desc {
+  display: flex; 
+  flex-direction: column;
+  max-width: 75%;
+}
 .examples {
   display: flex; 
   flex-direction: column;
   justify-content: center; 
   align-items: center;
-}
-.service-desc {
-  display: flex; 
-  flex-direction: column;
-  text-align: center;
-  max-width: 75%;
 }
 .function-desc {
   margin-top: 20px;
@@ -205,6 +200,9 @@ ul.menu-mobile a {
 .company-info {
   margin-top: 20px;
   margin-left: 0px;
+}
+.company-item {
+  margin-bottom: 20px;
 }
 .responsive-align {
   .align-center;
@@ -227,6 +225,10 @@ div#example, div#price {
   ul.menu-mobile {
     display: none;    
   }
+  .service-desc {
+    text-align: left;
+    max-width: 50%;
+  }
   .examples {
     display: flex; 
     flex-direction: row;
@@ -234,10 +236,6 @@ div#example, div#price {
     align-items: stretch;
     padding-left: 40px;
     padding-right: 40px;
-  }
-  .service-desc {
-    text-align: left;
-    max-width: 50%;
   }
   .function-desc {
     margin-top: 0px;
