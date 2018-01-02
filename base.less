@@ -101,24 +101,6 @@ a:link, a:visited {
   margin-bottom: 10px;
 }
 
-.personA {
-  background: url('img/A.jpg');
-  background-position: 50% 50%;
-  .circle;
-}
-
-.personB {
-  background: url('img/B.jpg');
-  background-position: 50% 50%;
-  .circle;
-}
-
-.personC {
-  background: url('img/C.jpg');
-  background-position: 50% 50%;
-  .circle;
-}
-
 .circle {
   width: 80px;
   height: 80px;
@@ -250,6 +232,8 @@ div#example, div#price {
     flex-direction: row;
     justify-content: space-around; 
     align-items: stretch;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .service-desc {
     text-align: left;
@@ -279,4 +263,69 @@ div#example, div#price {
   .reverse {
     flex-direction: row-reverse;
   }
+}
+
+
+.bg-A {
+  width: 80px; height: 80px;
+  background: url('img/css_sprites.png') -386px -286px;
+  .circle;
+}
+
+.bg-B {
+  width: 80px; height: 80px;
+  background: url('img/css_sprites.png') -286px -286px;
+  .circle;
+}
+
+.bg-C {
+  width: 80px; height: 80px;
+  background: url('img/css_sprites.png') -286px -386px;
+  .circle;
+}
+
+.bg-ai {
+    width: 256px; height: 256px;
+    background: url('img/css_sprites.png') -10px -10px;
+}
+
+.bg-resource {
+    width: 256px; height: 256px;
+    background: url('img/css_sprites.png') -10px -286px;
+}
+
+.bg-ci {
+    width: 256px; height: 256px;
+    background: url('img/css_sprites.png') -286px -10px;
+}
+
+.bg-free {
+    width: 50px; height: 64px;
+    background: url('img/css_sprites.png') -456px -386px;
+}
+
+.bg-business {
+    width: 50px; height: 64px;
+    background: url('img/css_sprites.png') -486px -286px;
+}
+
+.bg-premium {
+    width: 50px; height: 64px;
+    background: url('img/css_sprites.png') -386px -386px;
+}
+
+
+.bg-facebook {
+    width: 48px; height: 48px;
+    background: url('img/css_sprites.png') -422px -486px;
+}
+
+.bg-instagram {
+    width: 48px; height: 48px;
+    background: url('img/css_sprites.png') -354px -486px;
+}
+
+.bg-twitter {
+    width: 48px; height: 48px;
+    background: url('img/css_sprites.png') -286px -486px;
 }
